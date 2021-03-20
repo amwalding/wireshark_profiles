@@ -1,11 +1,11 @@
 # wireshark_profiles
-Here is my Wireshark Profiles repository.  These ZIP files contain profiles that can be added to your Wireshark configuration to speed up troubleshooting and packet analysis in Wireshark.
-
 Welcome Fellow Packet Analysts/Sniffers, Network Troubleshooters, and Wireshark geeks!
 We have been asked countless times over the years to share, and provide a sharing place for, Wireshark Profiles.  
 
 As most of you who are Wireshark users know, this is perhaps the most important capability of Wireshark that speeds troubleshooting and elimination of false positives.  Check out this video on the power of Wireshark Profiles:
 https://youtu.be/tSzgcEB9f54
+
+You can also get these profiles from our repository on our web site: https://www.cellstream.com/resources/wireshark-profiles-repository
 
 Yet there are almost no repositories for Wireshark profiles.  
 
