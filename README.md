@@ -5,7 +5,7 @@ We have been asked countless times over the years to share, and provide a sharin
 As most of you who are Wireshark users know, this is perhaps the most important capability of Wireshark that speeds troubleshooting and elimination of false positives.  Check out this video on the power of Wireshark Profiles:
 https://youtu.be/tSzgcEB9f54
 
-You can also get these profiles from our repository on our web site: https://www.cellstream.com/resources/wireshark-profiles-repository
+You can also get these profiles from our repository on our web site: https://www.cellstream.com/resources/wireshark-profiles-repository  and you can join our Wireshark Profiles channel on Slack: https://cellstreaminc.slack.com/archives/C02E5KJDBEX
 
 Yet there are almost no repositories for Wireshark profiles.  
 
