@@ -32,4 +32,8 @@ We have always shared our profiles, but we have never opened up a place for othe
 *Contribute to Our Profile Repository*
 We have always had the position that it would be unsafe to simply open this up to anyone who wishes to upload anything.  So if you wish to contribute a profile, or you modify/improve one of these profiles, please zip up the profile and email me (andyw@cellstream.com)!  I will post sent profiles here.
 
-Also, feel free to browse our other Wireshark related articles and information here!
+Also, feel free to browse our other Wireshark related articles and information here: https://www.cellstream.com/component/tags/tag/wireshark
+
+Did I just save you time and $$$ - buy me a coffee: https://www.buymeacoffee.com/awalding  or become a patron: https://www.patreon.com/bePatron?u=22427713&redirect_uri=https%3A%2F%2Fwww.cellstream.com%2Fcomponent%2Ftags%2Ftag%2Fwireshark&utm_medium=widget
+
+Thanks for supporting my work.
