@@ -20,12 +20,11 @@ I mean, I get the point, someone could sneak something into the profile that is 
 We try to state below what changes we have made, additions to, etc. the profiles we offer.  WE DO NOT POST ANYTHING WE WOULD CONSIDER SHADY.
 
 **How To Use Our Repository Profiles**
-To use any of the profiles here, simply download the profile(s) you want, and unzip them into the Wireshark profiles directory.  
+It is now super easy to add our profiles to your Wireshark system.
 
-In Windows, you can find the profiles directory by clicking Help> About Wireshark> Folders Tab, and then select the Personal Configuration hyperlink to open File Manager.
-In MAC OSx, you can find the profiles directory by clicking Wireshark> About Wireshark> Folders Tab, and then select the Personal Configuration hyperlink to open Finder.
-In Linux, you can find the profiles directory by clicking Help> About Wireshark> Folders Tab, and then select the Personal Configuration hyperlink to open the default file manager.  From the terminal try: cd /home/{user}/.config/wireshark or if you are already in your user home directory, just cd /.config/wireshark
-If you do not see a "profiles" folder, then create one (all lower case).
+1. Simply download the profile you want (they are all zipped).
+2. Then from your Wireshark GUI, right click on the lower right corner of the Wireshark GUI - in the Profile box.
+3. Then simply select: Import> from zip file, and pick the file from your downloads directory.  Now you can select the newly imported profile!!
 
 We have always shared our profiles, but we have never opened up a place for others to share back!  So after much consideration, we have decided to give this a try!  
 
