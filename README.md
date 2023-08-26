@@ -23,7 +23,7 @@ Possible, but in the long run, as long as you are wary, this thinking is ridicul
 
 We try to state below what changes we have made, additions to, etc. the profiles we offer.  WE DO NOT POST ANYTHING WE WOULD CONSIDER SHADY.
 
-**How To Use Our Repository Profiles**
+## How To Use Our Repository Profiles
 It is now super easy to add our profiles to your Wireshark system.
 
 1. Simply download the profile you want (they are all zipped).
@@ -32,11 +32,12 @@ It is now super easy to add our profiles to your Wireshark system.
 
 We have always shared our profiles, but we have never opened up a place for others to share back!  So after much consideration, we have decided to give this a try!  
 
-*Contribute to Our Profile Repository*
+## Contribute to Our Profile Repository
 We have always had the position that it would be unsafe to simply open this up to anyone who wishes to upload anything.  So if you wish to contribute a profile, or you modify/improve one of these profiles, please zip up the profile and email me (andyw@cellstream.com)!  I will post sent profiles here.
 
-Also, feel free to browse our other Wireshark related articles and information here: https://www.cellstream.com/component/tags/tag/wireshark
+Also, feel free to browse our other Wireshark related articles and information here: https://www.cellstream.com/tag/wireshark/
 
-Did I just save you time and $$$ - buy me a coffee: https://www.buymeacoffee.com/awalding  or become a patron: https://www.patreon.com/bePatron?u=22427713&redirect_uri=https%3A%2F%2Fwww.cellstream.com%2Fcomponent%2Ftags%2Ftag%2Fwireshark&utm_medium=widget
+Did I just save you time and $$$?  I certainly hope so.
+Return the favor - buy me a coffee: https://www.buymeacoffee.com/awalding  or become a patron: https://www.patreon.com/bePatron?u=22427713&redirect_uri=https%3A%2F%2Fwww.cellstream.com%2Fcomponent%2Ftags%2Ftag%2Fwireshark&utm_medium=widget
 
 Thanks for supporting my work.
