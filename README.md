@@ -1,4 +1,4 @@
-# wireshark_profiles
+# Wireshark Profiles Repository
 Welcome to all my Fellow Packet Analysts/Sniffers, Network Troubleshooters, and Wireshark geeks!
 
 We have been asked countless times over the years to share, and provide a sharing place for, Wireshark Profiles.  
