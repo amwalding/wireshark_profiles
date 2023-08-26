@@ -10,13 +10,16 @@ You can also get these profiles from our repository on our web site: https://www
 
 Yet there are almost no repositories for Wireshark profiles.  
 
-What????:surprise:
+What???? :frowning:
 
 In fact, I just attended a Wireshark related Webinar where one of the presenters said (and I quote exactly) they "do not like sharing profiles", because, they said "you don't know what things have been set in the profiles that you yourself have not created"!
 
-What????
+What???? :astonished:
 
-I mean, I get the point, someone could sneak something into the profile that is bad.  So you should be wary of this.  You should unzip a zipped profile and make sure it only contains TXT files.  That said, this is no reason to not share profiles.  It's like saying you should not use open source software because you never know who inserted something into the code.  Possible, but in the long run, as long as you are wary, this thinking is ridiculous.  
+I mean, I get the point, someone could sneak something into the profile that is bad.  So you should be wary of this.  
+You should unzip a zipped profile and make sure it only contains TXT files.  
+That said, this is no reason to not share profiles.  It's like saying you should not use open source software because you never know who inserted something into the code.  
+Possible, but in the long run, as long as you are wary, this thinking is ridiculous.  
 
 We try to state below what changes we have made, additions to, etc. the profiles we offer.  WE DO NOT POST ANYTHING WE WOULD CONSIDER SHADY.
 
