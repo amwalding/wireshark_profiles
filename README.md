@@ -1,5 +1,6 @@
 # wireshark_profiles
-Welcome Fellow Packet Analysts/Sniffers, Network Troubleshooters, and Wireshark geeks!
+Welcome to all my Fellow Packet Analysts/Sniffers, Network Troubleshooters, and Wireshark geeks!
+
 We have been asked countless times over the years to share, and provide a sharing place for, Wireshark Profiles.  
 
 As most of you who are Wireshark users know, this is perhaps the most important capability of Wireshark that speeds troubleshooting and elimination of false positives.  Check out this video on the power of Wireshark Profiles:
@@ -9,7 +10,7 @@ You can also get these profiles from our repository on our web site: https://www
 
 Yet there are almost no repositories for Wireshark profiles.  
 
-What????
+What????:surprise:
 
 In fact, I just attended a Wireshark related Webinar where one of the presenters said (and I quote exactly) they "do not like sharing profiles", because, they said "you don't know what things have been set in the profiles that you yourself have not created"!
 
