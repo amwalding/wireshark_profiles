@@ -1,4 +1,4 @@
-![Visitor Count](https://profile-counter.glitch.me/amwalding/count.svg)
+![Visitor Count](https://profile-counter.glitch.me/amwalding1/count.svg)
 # Wireshark Profiles Repository
 Welcome to all my Fellow Packet Analysts/Sniffers, Network Troubleshooters, and Wireshark geeks!
 
