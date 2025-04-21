@@ -1,0 +1,16 @@
+# This is Andy's Troubleshooting Quick Name Resolution File for Wireshark
+# Lines with # are comments, and are ignored
+#
+#192.168.1.1 SpectrumGW
+#192.168.1.215 My_PC
+#
+#Hartelco Fortinet Issue
+#172.16.0.21 FortinetSwitch1
+#172.16.0.101 IP-Phone
+#172.16.0.50 FortinetSwitch2
+#172.16.0.215 Laptop
+#172.16.0.30 POESwitch
+#172.16.0.10 IPPhoneSystem1
+#172.16.0.100 IPPhoneSystem2
+#
+192.168.1.1 Default_Gateway

@@ -1,0 +1,4 @@
+# "VLAN" profile settings file for Wireshark 4.4.5. Edit with care.
+
+# Automatically switch to this profile if this display filter matches.
+auto_switch_filter: 

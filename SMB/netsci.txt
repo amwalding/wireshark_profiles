@@ -1,0 +1,26 @@
+#              .@@@@@.
+#      _oo00O__(-O.O-)_____O00oo_______
+#     / '''''   |/0\|      `````      /
+#    /                               /
+#   /     Andrew M. Walding         /
+#  /    andyw@cellstream.com       /
+# /         214-659-1014          /
+#/_______.ooOO___________________/
+#        (   )       \_ *)
+#         \ (         ) OOoo.
+#          \_)        ( (   )
+#                      \ ) /
+#                       (_/ 
+#
+# This Profile was created by Andrew Walding - Twitter @awalding
+#
+# Website: https://www.cellstream.com
+# Online School: https://www.netscionline.com
+# Wireshark Repository: https://www.cellstream.com/resources/wireshark-profiles-repository
+# Github Repository: https://github.com/amwalding/wireshark_profiles
+# Join us on Slack: https://join.slack.com/t/cellstreaminc/shared_invite/zt-uuz4ey5y-eSHRFnZu2buDlFq6B32_VA
+#
+# Thanks for using this profile.  If you improve on it, or have a profile you would like to share,
+# please send it to me.  I will share with everyone else and give you credit in this file.
+#
+# Thanks!  And Happy Packet Sniffing!! #captureeveryday

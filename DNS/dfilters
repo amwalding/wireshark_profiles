@@ -1,0 +1,33 @@
+"Ethernet address 00:00:5e:00:53:00" eth.addr == 00:00:5e:00:53:00
+"Ethernet type 0x0806 (ARP)" eth.type == 0x0806
+"Ethernet broadcast" eth.addr == ff:ff:ff:ff:ff:ff
+"No ARP" not arp
+"IPv4 only" ip
+"IPv4 address 192.0.2.1" ip.addr == 192.0.2.1
+"IPv4 address isn't 192.0.2.1 (don't use != for this!)" !(ip.addr == 192.0.2.1)
+"IPv6 only" ipv6
+"IPv6 address 2001:db8::1" ipv6.addr == 2001:db8::1
+"IPX only" ipx
+"TCP only" tcp
+"UDP only" udp
+"Non-DNS" !(udp.port == 53 || tcp.port == 53)
+"TCP or UDP port is 80 (HTTP)" tcp.port == 80 || udp.port == 80
+"HTTP" http
+"No ARP and no DNS" not arp and !(udp.port == 53)
+"Non-HTTP and non-SMTP to/from 192.0.2.1" ip.addr == 192.0.2.1 and not tcp.port in {80, 25}
+"DNS or mDNS over UDP or TCP" tcp.port==53 or tcp.port==5353 or udp.port==53 or udp.port==5353
+"DNS over UDP or TCP" tcp.port==53 or udp.port==53
+"DNS over TCP" tcp.port==53
+"DNS over UDP" udp.port==53
+"Multicast DNS" tcp.port==5353 or udp.port==5353
+"DNS Queries/Requests" dns.flags.response==0
+"DNS Replies/Responses" dns.flags.response==1
+"DNS Query/Request with recursion desired" dns.flags.recdesired==1
+"DNS Reply/Response stating recursion is available" dns.flags.recavail==1
+"DNS Query/Request for www.example.com" dns.qry.name=="www.example.com"
+"DNS Query/Request for a host name" dns.qry.type==0x0001
+"DNS Query/Request for a domain name pointer" dns.qry.type==0x000c
+"DNS Reply/Response contains a CNAME value" dns.resp.type==0x0005
+"DNS Reply/Response contains a SOA value" dns.resp.type==0x0006
+"DNS contains the string \"string\"" dns contains "string"
+"Filter DNS by Transaction ID" dns.id==1

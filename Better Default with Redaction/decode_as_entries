@@ -1,0 +1,6 @@
+# "Decode As" entries file for Wireshark 4.2.0.
+#
+# This file is regenerated each time "Decode As" preferences
+# are saved within Wireshark. Making manual changes should be safe,
+# however.
+decode_as_entry: udp.port,2000,(none),VXLAN

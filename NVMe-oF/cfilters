@@ -1,0 +1,30 @@
+"Ethernet address 00:00:5e:00:53:00" ether host 00:00:5e:00:53:00
+"Ethernet type 0x0806 (ARP)" ether proto 0x0806
+"No Broadcast and no Multicast" not broadcast and not multicast
+"No ARP" not arp
+"No ARP and no DNS" not arp and port not 53
+"Captures VLAN traffic for a particular host." vlan and host 192.168.1.1
+"Captures VLAN traffic for a paticular host and a particular port (HTTP in the example)" vlan and (host 192.168.1.1 and port 80)
+"Capture PPPOE traffic" pppoes and (host 192.168.1.1 and port 80)
+"Captures PPPOE traffic for a paticular host and a particular port (HTTP in the example)" pppoes and host 192.168.1.1
+"IPv4 only" ip
+"IPv4 address 192.0.2.1" host 192.0.2.1
+"Capture only traffic to or from a specific IP address" host 192.168.1.1
+"Capture traffic to or from (sources or destinations) a range of IP addresses." net 192.168.1.0 mask 255.255.255.0
+"Capture traffic to or from (sources or destinations) a range of IP addresses" src net 192.168.1.0/24
+"Capture traffic to or from (sources or destinations) a range of IP addresses" dst net 192.168.1.0/24
+"IPv6 only" ip6
+"IPv6 address 2001:db8::1" host 2001:db8::1
+"Capture IPv6 Native Traffic Only.  This will exclude tunnelled IPv6"  ip6 and not ip proto 41
+"Capture only IPv6 over IPv4 Tunnelled Traffic" ip proto 41
+"Capture traffic within a range of ports"  tcp portrange 1800-1880
+"Captures all IPv6 traffic within the local network that is multicast (such as Neighbor and Router advertisements)" dst host ff02::1 
+"TCP only" tcp
+"UDP only" udp
+"Non-DNS" not port 53
+"TCP or UDP port 80 (HTTP)" port 80
+"HTTP TCP port (80)" tcp port http
+"Non-HTTP and non-SMTP to/from www.wireshark.org" not port 80 and not port 25 and host www.wireshark.org
+"Capture only FTP Traffic"  tcp portrange 20-21
+"Captures VoIP SIP traffic using TCP" tcp port sip
+"Captures VoIP SIP traffic using UDP" udp port sip

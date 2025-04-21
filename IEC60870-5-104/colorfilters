@@ -1,0 +1,9 @@
+# This file was created by Wireshark. Edit with care.
+@Interrogation Commands@all iec60870_asdu.typeid >= 100 and iec60870_asdu.typeid <= 101@[65535,39321,13107][0,0,0]
+@Commands@all iec60870_asdu.typeid >= 45 and iec60870_asdu.typeid <= 51@[65535,39321,26214][0,0,0]
+@Commands with time tag@all iec60870_asdu.typeid >= 58 and iec60870_asdu.typeid <= 64@[65535,26214,13107][0,0,0]
+@Multiple APDUs@len(tcp.payload)>len(iec60870_104)+2@[65535,52428,52428][0,0,0]
+@TESTFR act + con@iec60870_104.utype == 0x10 or iec60870_104.utype == 0x20@[30326,54998,65535][0,0,0]
+@STARTDT act + con@iec60870_104.utype == 0x01 or iec60870_104.utype == 0x02@[39321,65535,52428][0,0,65535]
+@STOPDT act + con@iec60870_104.utype == 0x04 or iec60870_104.utype == 0x08@[39321,26214,26214][0,0,0]
+@IEC104@iec60870_104@[39321,39321,39321][0,0,0]

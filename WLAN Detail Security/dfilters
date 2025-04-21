@@ -1,0 +1,34 @@
+"WLAN Announce TIM Frames" (wlan.fc.type == 1)&&(wlan.fc.subtype == 9)
+"WLAN Management Frames" wlan.fc.type eq 0
+"WLAN Control Frames" wlan.fc.type eq 1
+"WLAN Data Frames" wlan.fc.type eq 2
+"WLAN Beacon Frames" (wlan.fc.type == 0)&&(wlan.fc.type_subtype == 0x0008)
+"WLAN Association Requests" (wlan.fc.type == 0)&&(wlan.fc.type_subtype == 0x0000)
+"WLAN Probe Requests" (wlan.fc.type == 0)&&(wlan.fc.type_subtype == 0x0004)
+"WLAN Probe Responses" (wlan.fc.type == 0)&&(wlan.fc.type_subtype == 0x0005)
+"WLAN Probe Request or Probe Responses" (wlan.fc.type == 0)&&((wlan.fc.type_subtype == 0x0004)||(wlan.fc.type_subtype == 0x0005))
+"WLAN Authentication" (wlan.fc.type == 0)&&(wlan.fc.type_subtype == 0x0b)
+"WLAN De-Authentication" (wlan.fc.type == 0)&&(wlan.fc.type_subtype == 0x0c)
+"WLAN Association Responses" (wlan.fc.type == 0)&&(wlan.fc.type_subtype == 0x0001)
+"WLAN Disassociation Frames" (wlan.fc.type == 0)&&(wlan.fc.type_subtype == 0x0a)
+"WLAN Null Data Frames" (wlan.fc.type == 2)&&(wlan.fc.type_subtype == 0x0024)
+"WLAN Request To Send - RTS" (wlan.fc.type == 1)&&(wlan.fc.type_subtype == 0x001b)
+"WLAN Clear To Send - CTS" (wlan.fc.type == 1)&&(wlan.fc.type_subtype == 0x001c)
+"WLAN Request To Send and Clear To Send pairs" (wlan.fc.type == 1)&&((wlan.fc.type_subtype == 0x001b)||(wlan.fc.type_subtype==0x001c))
+"WLAN Traffic To or From a Station" (wlan.ta == f8:94:c2:4f:3e:6d) || (wlan.ra ==f8:94:c2:4f:3e:6d)
+"WLAN 802.1X" llc.type == 0x888e
+"WLAN QoS Data" wlan.fc.type_subtype == 0x0028
+"Ethernet address 00:08:15:00:08:15" eth.addr == 00:08:15:00:08:15
+"Ethernet type 0x0806 (ARP)" eth.type == 0x0806
+"Ethernet broadcast" eth.addr == ff:ff:ff:ff:ff:ff
+"No ARP" not arp
+"IP only" ip
+"IP address 192.168.0.1" ip.addr == 192.168.0.1
+"IP address isn't 192.168.0.1, don't use != for this!" !(ip.addr == 192.168.0.1)
+"TCP only" tcp
+"UDP only" udp
+"Non-DNS" !(udp.port == 53 || tcp.port == 53)
+"TCP or UDP port is 80 (HTTP)" tcp.port == 80 || udp.port == 80
+"HTTP" http
+"No ARP and no DNS" not arp and !(udp.port == 53)
+"Non-HTTP and non-SMTP to/from 192.168.0.1" not (tcp.port == 80) and not (tcp.port == 25) and ip.addr == 192.168.0.1
