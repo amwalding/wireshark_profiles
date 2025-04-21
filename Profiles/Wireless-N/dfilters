@@ -1,0 +1,37 @@
+"Wireless Beacon Frames" wlan.fc.type_subtype == 0x0008
+"No Wireless Beacon Frames" !wlan.fc.type_subtype == 0x0008
+"Wireless Probe Requests" wlan.fc.type_subtype == 0x0004
+"Wireless Probe Responses" wlan.fc.type_subtype == 0x0005
+"Wireless Probe Request or Probe Responses" (wlan.fc.type_subtype == 0x0004)||(wlan.fc.type_subtype == 0x0005)
+"Wireless Request To Send" wlan.fc.type_subtype == 0x001b
+"Wireless Clear To Send" wlan.fc.type_subtype == 0x001c
+"Wireless Request To Send and Clear To Send pairs" (wlan.fc.type_subtype == 0x001b)||(wlan.fc.type_subtype==0x001c)
+"Wireless QoS Data" wlan.fc.type_subtype == 0x0028
+"Wireless 802.1X" llc.type == 0x888e
+"Wireless Management Frames" wlan.fc.type eq 0
+"Wireless Control Frames" wlan.fc.type eq 1
+"Wireless Data Frames" wlan.fc.type eq 2
+"Wireless Association Requests" wlan.fc.type_subtype == 0x0000
+"Wireless Association Responses" wlan.fc.type_subtype == 0x0001
+"Wireless Association Requests and Responses" (wlan.fc.type_subtype == 0x0000) or (wlan.fc.type_subtype == 0x0001)
+"Wireless Disassociation Frames" wlan.fc.type_subtype == 0x000a
+"Wireless Authentication" wlan.fc.type_subtype == 0x000b
+"Wireless De-Authentication" wlan.fc.type_subtype == 0x000c
+"Wireless De-Authentication and Authentication" (wlan.fc.type_subtype == 0x000b) or (wlan.fc.type_subtype == 0x000c)
+"Wireless ACK's" wlan.fc.type_subtype == 0x001d
+"Wireless EAP Authentication Frames" eapol
+"Ethernet address 00:08:15:00:08:15" eth.addr == 00:08:15:00:08:15
+"Ethernet type 0x0806 (ARP)" eth.type == 0x0806
+"Ethernet broadcast" eth.addr == ff:ff:ff:ff:ff:ff
+"No ARP" not arp
+"IP only" ip
+"IP address 192.168.0.1" ip.addr == 192.168.0.1
+"IP address isn't 192.168.0.1, don't use != for this!" !(ip.addr == 192.168.0.1)
+"TCP only" tcp
+"UDP only" udp
+"Non-DNS" !(udp.port == 53 || tcp.port == 53)
+"TCP or UDP port is 80 (HTTP)" tcp.port == 80 || udp.port == 80
+"HTTP" http
+"No ARP and no DNS" not arp and !(udp.port == 53)
+"Non-HTTP and non-SMTP to/from 192.168.0.1" not (tcp.port == 80) and not (tcp.port == 25) and ip.addr == 192.168.0.1
+"ACKS" wlan.fc.type_subtype == 0x001d

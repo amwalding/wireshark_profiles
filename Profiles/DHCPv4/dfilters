@@ -1,0 +1,30 @@
+"Just DHCP Packets" dhcp
+"DHCP Discover Messages" dhcp.option.dhcp == 1
+"DHCP Offer Messages" dhcp.option.dhcp == 2
+"DHCP Request Messages" dhcp.option.dhcp == 3
+"DHCP Decline Messages" dhcp.option.dhcp == 4
+"DHCP ACK  Messages" dhcp.option.dhcp == 5
+"DHCP Negative ACK Messages" dhcp.option.dhcp == 6
+"DHCP Release Messages" dhcp.option.dhcp == 7
+"DHCP Inform Messages" dhcp.option.dhcp == 8
+"DHCP Packets on non standard ports" dhcp && (not (udp.port==68 or udp.port==67))
+"Ethernet address 00:00:5e:00:53:00" eth.addr == 00:00:5e:00:53:00
+"Ethernet type 0x0806 (ARP)" eth.type == 0x0806
+"Ethernet broadcast" eth.addr == ff:ff:ff:ff:ff:ff
+"Find resolved OUI's that match a Vendor" eth.addr_resolved contains Cisco
+"No ARP" not arp
+"IPv4 only" ip
+"IPv4 address 192.0.2.1" ip.addr == 192.0.2.1
+"IPv4 address isn't 192.0.2.1 (don't use != for this!)" !(ip.addr == 192.0.2.1)
+"IPv6 only" ipv6
+"IPv6 address 2001:db8::1" ipv6.addr == 2001:db8::1
+"IPX only" ipx
+"TCP only" tcp
+"UDP only" udp
+"Non-DNS" !(udp.port == 53 || tcp.port == 53)
+"TCP or UDP port is 80 (HTTP)" tcp.port == 80 || udp.port == 80
+"HTTP" http
+"No ARP and no DNS" not arp and !(udp.port == 53)
+"Non-HTTP and non-SMTP to/from 192.0.2.1" ip.addr == 192.0.2.1 and not tcp.port in {80, 25}
+"All traffic in a particular IPv4 Subnet" ip and !ip.addr != 192.168.1.0/24
+"Find frames with a particular string" frame matches password

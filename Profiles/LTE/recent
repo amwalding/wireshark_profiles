@@ -1,0 +1,150 @@
+# Recent settings file for Wireshark 4.0.10.
+#
+# This file is regenerated each time Wireshark is quit
+# and when changing configuration profile.
+# So be careful, if you want to make manual changes here.
+
+
+# Main Toolbar show (hide).
+# TRUE or FALSE (case-insensitive).
+gui.toolbar_main_show: TRUE
+
+# Filter Toolbar show (hide).
+# TRUE or FALSE (case-insensitive).
+gui.filter_toolbar_show: TRUE
+
+# Wireless Settings Toolbar show (hide).
+# TRUE or FALSE (case-insensitive).
+gui.wireless_toolbar_show: FALSE
+
+# Packet list show (hide).
+# TRUE or FALSE (case-insensitive).
+gui.packet_list_show: TRUE
+
+# Tree view show (hide).
+# TRUE or FALSE (case-insensitive).
+gui.tree_view_show: TRUE
+
+# Byte view show (hide).
+# TRUE or FALSE (case-insensitive).
+gui.byte_view_show: FALSE
+
+# Packet diagram show (hide).
+# TRUE or FALSE (case-insensitive).
+gui.packet_diagram_show: TRUE
+
+# Statusbar show (hide).
+# TRUE or FALSE (case-insensitive).
+gui.statusbar_show: TRUE
+
+# Packet list colorize (hide).
+# TRUE or FALSE (case-insensitive).
+gui.packet_list_colorize: TRUE
+
+# Timestamp display format.
+# One of: RELATIVE, ABSOLUTE, ABSOLUTE_WITH_YMD, ABSOLUTE_WITH_YDOY, ABSOLUTE_WITH_DATE, DELTA, DELTA_DIS, EPOCH, UTC, UTC_WITH_YMD, UTC_WITH_YDOY, UTC_WITH_DATE
+gui.time_format: ABSOLUTE
+
+# Timestamp display precision.
+# One of: AUTO, SEC, DSEC, CSEC, MSEC, USEC, NSEC
+gui.time_precision: AUTO
+
+# Seconds display format.
+# One of: SECONDS, HOUR_MIN_SEC
+gui.seconds_format: SECONDS
+
+# Zoom level.
+# A decimal number.
+gui.zoom_level: 1
+
+# Bytes view display type.
+# One of: HEX, BITS
+gui.bytes_view: HEX
+
+# Bytes view text encoding.
+# One of: FROM_PACKET, ASCII, EBCDIC
+gui.bytes_encoding: FROM_PACKET
+
+# Packet diagram field values show (hide).
+# TRUE or FALSE (case-insensitive).
+gui.packet_diagram_field_values: FALSE
+
+# Allow hover selection in byte view.
+# TRUE or FALSE (case-insensitive).
+gui.allow_hover_selection: TRUE
+
+# Main window upper (or leftmost) pane size.
+# Decimal number.
+gui.geometry_main_upper_pane: 583
+
+# Main window middle pane size.
+# Decimal number.
+gui.geometry_main_lower_pane: 1920
+
+# Packet list column pixel widths.
+# Each pair of strings consists of a column format and its pixel width.
+column.width:
+        %m, 73,
+        "%Cus:frame.time_delta_displayed", 0,
+        %t, 0,
+        %Yt, 267,
+        %s, 294,
+        %d, 294:L,
+        %L, 0,
+        %p, 0,
+        "%Cus:diameter.Destination-Host", 309,
+        "%Cus:diameter.applicationId or gtpv2.message_type or diameter.cmd.code  or nas_eps.nas_msg_esm_type or s1ap.procedureCode or sip.Method or sip.CSeq.method", 497,
+        "%Cus:diameter.Result-Code or gtpv2.cause or diameter.Experimental-Result-Code or s1ap.S1AP_PDU or sip.Status-Line or sip.User-Agent", 654,
+        %i, 1491,
+        "%Cus:diameter.Error-Message", 0,
+        "%Cus:diameter.flags.request", 0,
+        "%Cus:gtpv2.cause", 0,
+        "%Cus:diameter.Result-Code", 0,
+        "%Cus:gtpv2.bearer_qos_pl", 0,
+        "%Cus:gtpv2.apn", 267,
+        "%Cus:diameter.Destination-Realm", 0,
+        "%Cus:diameter.Origin-Realm", 0,
+        "%Cus:diameter.applicationId", 0,
+        "%Cus:diameter.Experimental-Result-Code", 0,
+        "%Cus:isup.calling", 0,
+        "%Cus:diameter.avp", 0,
+        "%Cus:e212.imsi", 141,
+        "%Cus:diameter.RAT-Type", 2512,
+        "%Cus:s1ap.tAC", 0,
+        "%Cus:gsm_a.gm.sm.apn", 0,
+        "%Cus:diameter.Non-3GPP-IP-Access-APN", 0,
+        "%Cus:pppoe.session_id", 0,
+        "%Cus:diameter.Service-Selection", 0,
+        "%Cus:gtpv2.seq", 0,
+        "%Cus:diameter.hopbyhopid", 0
+
+# Open conversation dialog tabs.
+# List of conversation names, e.g. "TCP", "IPv6".
+gui.conversation_tabs: 
+
+# Conversation dialog tabs columns.
+# List of conversation columns numbers.
+gui.conversation_tabs_columns: 
+
+# Open endpoint dialog tabs.
+# List of endpoint names, e.g. "TCP", "IPv6".
+gui.endpoint_tabs: 
+
+# Endpoint dialog tabs columns.
+# List of endpoint columns numbers.
+gui.endpoint_tabs_columns: 
+
+# For RLC stats, whether to use RLC PDUs found inside MAC frames.
+# TRUE or FALSE (case-insensitive).
+gui.rlc_pdus_from_mac_frames: FALSE
+
+# Last directory navigated to in File Open dialog.
+gui.fileopen_remembered_dir: C:/Users/bac/AppData/Local/Microsoft/Windows/INetCache/Content.Outlook/PM8C1YDY\
+
+# Additional Toolbars shown
+# List of additional toolbars to show.
+gui.additional_toolbar_show: 
+
+# Interface Toolbars show.
+# List of interface toolbars to show.
+gui.interface_toolbar_show: 

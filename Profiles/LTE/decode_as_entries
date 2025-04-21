@@ -1,0 +1,49 @@
+# "Decode As" entries file for Wireshark 4.0.5.
+#
+# This file is regenerated each time "Decode As" preferences
+# are saved within Wireshark. Making manual changes should be safe,
+# however.
+decode_as_entry: sctp.port,3869,(none),Diameter
+decode_as_entry: sctp.port,3870,(none),Diameter
+decode_as_entry: sctp.port,3871,(none),Diameter
+decode_as_entry: sctp.port,3872,(none),Diameter
+decode_as_entry: sctp.port,3873,(none),Diameter
+decode_as_entry: sctp.port,3874,(none),Diameter
+decode_as_entry: sctp.port,3875,(none),Diameter
+decode_as_entry: sctp.port,3876,(none),Diameter
+decode_as_entry: sctp.port,3877,(none),Diameter
+decode_as_entry: sctp.port,3878,(none),Diameter
+decode_as_entry: sctp.port,3879,(none),Diameter
+decode_as_entry: sctp.port,3880,(none),Diameter
+decode_as_entry: sctp.port,3881,(none),Diameter
+decode_as_entry: sctp.port,3882,(none),Diameter
+decode_as_entry: sctp.port,3883,(none),Diameter
+decode_as_entry: sctp.port,3884,(none),Diameter
+decode_as_entry: sctp.port,3885,(none),Diameter
+decode_as_entry: sctp.port,3886,(none),Diameter
+decode_as_entry: sctp.port,3887,(none),Diameter
+decode_as_entry: sctp.port,3888,(none),Diameter
+decode_as_entry: sctp.port,3889,(none),Diameter
+decode_as_entry: sctp.port,3890,(none),Diameter
+decode_as_entry: tcp.port,3869,(none),Diameter
+decode_as_entry: tcp.port,3870,(none),Diameter
+decode_as_entry: tcp.port,3871,(none),Diameter
+decode_as_entry: tcp.port,3872,(none),Diameter
+decode_as_entry: tcp.port,3873,(none),Diameter
+decode_as_entry: tcp.port,3874,(none),Diameter
+decode_as_entry: tcp.port,3875,(none),Diameter
+decode_as_entry: tcp.port,3876,(none),Diameter
+decode_as_entry: tcp.port,3877,(none),Diameter
+decode_as_entry: tcp.port,3878,(none),Diameter
+decode_as_entry: tcp.port,3879,(none),Diameter
+decode_as_entry: tcp.port,3880,(none),Diameter
+decode_as_entry: tcp.port,3881,(none),Diameter
+decode_as_entry: tcp.port,3882,(none),Diameter
+decode_as_entry: tcp.port,3883,(none),Diameter
+decode_as_entry: tcp.port,3884,(none),Diameter
+decode_as_entry: tcp.port,3885,(none),Diameter
+decode_as_entry: tcp.port,3886,(none),Diameter
+decode_as_entry: tcp.port,3887,(none),Diameter
+decode_as_entry: tcp.port,3888,(none),Diameter
+decode_as_entry: tcp.port,3889,(none),Diameter
+decode_as_entry: tcp.port,3890,(none),Diameter

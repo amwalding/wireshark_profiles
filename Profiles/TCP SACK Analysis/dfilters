@@ -1,0 +1,41 @@
+"Any Data in TCP Urgent Field?" tcp.urgent_pointer>0
+"Display TCP Port 443 or 4430 or 4434" tcp.port in {443 4430..4434}
+"Display TCP SYN and non-zero ACK#" tcp.flags.syn==1 && tcp.flags.ack==0 && tcp.ack==0
+"Display TCP SYN plus ACK (Bitwise)" tcp.flags & 0x12
+"Display TCP connection refusal/ACK scan" tcp.flags.reset==1 && tcp.flags.ack==1 && tcp.seq==1 && tcp.ack==1
+"Display just the 3-way Handshake Packets" tcp.flags.syn==1 or (tcp.seq==1 and tcp.ack==1 and tcp.len==0 and tcp.analysis.initial_rtt)
+"Display the number of SYN packets (# connections)" tcp.flags == 2
+"Display TCP Window is Zero" tcp.analysis.zero_window
+"Display TCP Window Update" tcp.analysis.window_update
+"Display TCP Window Full" tcp.analysis.window_full
+"Display TCP Resets" tcp.flags.reset == 1
+"Display TCP Delta Times greater than 1 second" tcp.time_delta > 1
+"Display TCP Retransmissions" tcp.analysis.retransmission or tcp.analysis.out_of_order
+"Display TCP SYN or SYN/ACK packets" (tcp.flags.syn == 1)
+"Display TCP SYN/ACK packets" (tcp.flags.syn == 1) && (tcp.flags.ack ==1)
+"Display TCP SYN packets" (tcp.flags.syn == 1) && (tcp.flags.ack ==0)
+"Display TCP Push Bit is set" tcp.flags.push == 1
+"Display TCP Stream Index Selector" tcp.stream eq 0
+"Display TCP Time Deltas > 1 second" tcp.time_delta > 1
+"Display TCP Time Deltas > 1 but not SYN/FIN/RST" tcp.time_delta > 1 && !(tcp.flags.syn==1 or tcp.flags.fin==1 or tcp.flags.reset==1)
+"Display Bad TCP - only" tcp.analysis.flags && !tcp.analysis.window_update && !(tcp.analysis.keep_alive or tcp.analysis.keep_alive_ack)
+"Display content of TCP with \"GET\"" tcp contains "GET"
+"Display all Office 365 Traffic" ip.addr == 40.0.0.0/8
+"Display Slow HTTP" frame.time_delta_displayed > 1 and (http.request.method == "GET" || http.response.code == 200)
+"Non-HTTP and non-SMTP to/from 192.168.0.1" not (tcp.port == 80) and not (tcp.port == 25) and ip.addr == 192.168.0.1
+"No ARP and no DNS" not arp and !(udp.port == 53)
+"HTTP" http
+"TCP or UDP port is 80 (HTTP)" tcp.port == 80 || udp.port == 80
+"Non-DNS" !(udp.port == 53 || tcp.port == 53)
+"UDP only" udp
+"TCP only" tcp
+"IPv6 address 2001:db8::1" ipv6.addr == 2001:db8::1
+"IPv6 only" ipv6
+"IPv4 address isn't 192.168.0.1, don't use != for this!" !(ip.addr == 192.168.0.1)
+"IPv4 address 192.168.0.1" ip.addr == 192.168.0.1
+"IPv4 only" ip
+"No ARP" not arp
+"Just Packets with Comments" frame.comment
+"Ethernet broadcast" eth.addr == ff:ff:ff:ff:ff:ff
+"Ethernet type 0x0806 (ARP)" eth.type == 0x0806
+"Ethernet address 00:08:15:00:08:15" eth.addr == 00:08:15:00:08:15

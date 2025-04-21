@@ -1,0 +1,30 @@
+"Ethernet address 00:00:5e:00:53:00" eth.addr == 00:00:5e:00:53:00
+"Ethernet type 0x0806 (ARP)" eth.type == 0x0806
+"Ethernet broadcast" eth.addr == ff:ff:ff:ff:ff:ff
+"No ARP" not arp
+"IPv4 only" ip
+"IPv4 address 192.0.2.1" ip.addr == 192.0.2.1
+"IPv4 address isn't 192.0.2.1 (don't use != for this!)" !(ip.addr == 192.0.2.1)
+"IPv6 only" ipv6
+"IPv6 address 2001:db8::1" ipv6.addr == 2001:db8::1
+"IPX only" ipx
+"TCP only" tcp
+"UDP only" udp
+"Non-DNS" !(udp.port == 53 || tcp.port == 53)
+"TCP or UDP port is 80 (HTTP)" tcp.port == 80 || udp.port == 80
+"No ARP and no DNS" not arp and !(udp.port == 53)
+"Non-HTTP and non-SMTP to/from 192.0.2.1" ip.addr == 192.0.2.1 and not tcp.port in {80, 25}
+"SSL/TLS Handshake Servers List" ssl.handshake.extensions_server_name
+"SSL/TLS Traffic on Port 443" tcp.port == 443
+"TLS Client Hello" tls.handshake.type == 1
+"TLS Server Hello" tls.handshake.type == 2
+"TLS Encrypted Alert (followed by FIN, it’s probably a connection close)" tls.record.content_type == 21
+"TLS Target server contains “hack” in server name" tls.handshake.extensions_server_name contains "hack"
+"HTTP" http
+"DNS or HTTP Errors" (dns.flags.rcode != 0) || http.response.code > 399
+"Nmap Identified in HTTP User Agent field (case sensitive)" http.user_agent contains "Nmap"
+"HTTP objects with.exe/.zip/.jar file name extensions (PERL regex)" http.request.uri matches "\.(exe|zip|jar)$"
+"HTTP Get not on port 80" frame contains "GET" && !tcp.port==80
+"HTTP Content type “application” from server" http.content_type contains "application"
+"HTTP Redirections" http.response.code>299 && http.response.code<400
+"HTTP GET/POST" http.request.method == "GET" or http.request.method=="POST"

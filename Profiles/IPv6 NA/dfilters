@@ -1,0 +1,42 @@
+"Ethernet address 00:08:15:00:08:15" eth.addr == 00:08:15:00:08:15
+"Ethernet type 0x0806 (ARP)" eth.type == 0x0806
+"Ethernet broadcast" eth.addr == ff:ff:ff:ff:ff:ff
+"Just Packets with Comments" frame.comment
+"Not Neighbor Discover Protocol" not ndp 
+"IPv6 only" ipv6
+"TCP only" tcp
+"UDP only" udp
+"Non-DNS" !(udp.port == 53 || tcp.port == 53)
+"TCP or UDP port is 80 (HTTP)" tcp.port == 80 || udp.port == 80
+"HTTP" http
+"No ARP and no DNS" not arp and !(udp.port == 53)
+"Non-HTTP and non-SMTP to/from 192.168.0.1" not (tcp.port == 80) and not (tcp.port == 25) and ip.addr == 192.168.0.1
+"IPv6 Next Header is Fragmentation Header" ipv6.nxt == 44
+"IPv6 Next Header is ESP" ipv6.nxt == 50
+"IPv6 Next Header is AP" ipv6.nxt == 51
+"IPv6 Next Header is Routing Header" ipv6.nxt == 43
+"IPv6 Carrying TCP" ipv6.nxt == 6
+"IPv6 Carrying UDP" ipv6.nxt == 17
+"IPv6 Carrying ICMPv6" ipv6.nxt == 58
+"Reserved Documentation Address" ipv6.addr >= 2001:db8:: and ipv6.addr <= 2001:db9::
+"ICMPv6 Destination Unreachable" icmpv6.type == 1
+"ICMPv6 Packet Too Big" icmpv6.type == 2
+"ICMPv6 Time Exceeded" icmpv6.type == 3
+"ICMPv6 Parameter Problem" icmpv6.type == 4
+"ICMPv6 Router Solicitation" icmpv6.type == 133
+"ICMPv6 Router Advertisement" icmpv6.type == 134
+"ICMPv6 Neighbor Solicitation or Neighbor Advertisement" icmpv6.type == 135 || icmpv6.type == 136
+"ICMPv6 Neighbor Solicitation" icmpv6.type == 135
+"ICMPv6 Neighbor Advertisement" icmpv6.type == 136
+"ICMPv6 Redirect" icmpv6.type == 137
+"ICMPv6 MLD Packets" icmpv6.type >= 130 and icmpv6.type <= 132
+"Attempt to find all DHCPv6 Relay Agents and Servers on Link Local" ipv6.addr == ff02::1:2
+"Attempt to find all DHCPv6 Servers on Site" ipv6.addr == ff05::1:3
+"Attempt to find all Nodes on Link Local" ipv6.addr == ff02::1
+"Attempt to find all Routers on Link Local" ipv6.addr == ff02::2
+"Attempt to find all UPnP on Link Local" ipv6.addr == ff02::F
+"Attempt to find all Routers on Site Local" ipv6.addr == ff05::2
+"Attempt to find all mDNSv6 on Site Local" ipv6.addr == ff05::FB
+"ISATAP Tunneling Private IPv4" ipv6.addr[80:16] contains 5EFE
+"ISATAP Tunneling Public IPv4" ipv6.addr[64:32] contains 0200:5efe
+"6to4 Tunneling" ipv6.addr[0:16] contains 2002

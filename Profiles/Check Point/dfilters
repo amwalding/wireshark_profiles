@@ -1,0 +1,9 @@
+"Ethernet type 0x0806 (ARP)" eth.type == 0x0806
+"Ethernet broadcast" eth.addr == ff:ff:ff:ff:ff:ff
+"No ARP" not arp
+"IP only" ip
+"IPX only" ipx
+"TCP only" tcp
+"UDP only" udp
+"HTTP" http
+"No ARP and no DNS" not arp and !(udp.port == 53)

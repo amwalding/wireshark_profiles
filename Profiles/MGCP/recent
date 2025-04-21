@@ -1,0 +1,164 @@
+# Recent settings file for Wireshark 4.4.5.
+#
+# This file is regenerated each time Wireshark is quit
+# and when changing configuration profile.
+# So be careful, if you want to make manual changes here.
+
+
+# Main Toolbar show (hide).
+# true or false (case-insensitive).
+gui.toolbar_main_show: true
+
+# Filter Toolbar show (hide).
+# true or false (case-insensitive).
+gui.filter_toolbar_show: true
+
+# Wireless Settings Toolbar show (hide).
+# true or false (case-insensitive).
+gui.wireless_toolbar_show: false
+
+# Packet list show (hide).
+# true or false (case-insensitive).
+gui.packet_list_show: true
+
+# Tree view show (hide).
+# true or false (case-insensitive).
+gui.tree_view_show: true
+
+# Byte view show (hide).
+# true or false (case-insensitive).
+gui.byte_view_show: true
+
+# Packet diagram show (hide).
+# true or false (case-insensitive).
+gui.packet_diagram_show: true
+
+# Statusbar show (hide).
+# true or false (case-insensitive).
+gui.statusbar_show: true
+
+# Packet list colorize (hide).
+# true or false (case-insensitive).
+gui.packet_list_colorize: true
+
+# Auto scroll packet list when capturing.
+# true or false (case-insensitive).
+capture.auto_scroll: true
+
+# Timestamp display format.
+# One of: RELATIVE, ABSOLUTE, ABSOLUTE_WITH_YMD, ABSOLUTE_WITH_YDOY, ABSOLUTE_WITH_DATE, DELTA, DELTA_DIS, EPOCH, UTC, UTC_WITH_YMD, UTC_WITH_YDOY, UTC_WITH_DATE
+gui.time_format: RELATIVE
+
+# Timestamp display precision.
+# One of: AUTO, SEC, DSEC, CSEC, MSEC, USEC, NSEC, or a number between 0 and 9
+gui.time_precision: AUTO
+
+# Seconds display format.
+# One of: SECONDS, HOUR_MIN_SEC
+gui.seconds_format: SECONDS
+
+# Zoom level.
+# A decimal number.
+gui.zoom_level: 0
+
+# Bytes view display type.
+# One of: HEX, BITS, DEC, OCT
+gui.bytes_view: HEX
+
+# Bytes view text encoding.
+# One of: FROM_PACKET, ASCII, EBCDIC
+gui.bytes_encoding: FROM_PACKET
+
+# Packet diagram field values show (hide).
+# true or false (case-insensitive).
+gui.packet_diagram_field_values: false
+
+# Allow hover selection in byte view.
+# true or false (case-insensitive).
+gui.allow_hover_selection: true
+
+# Follow stream show as.
+# One of: ASCII, ASCII_CONTROL, C_ARRAYS, EBCDIC, HEX_DUMP, HTML, IMAGE, JSON, RAW, RUST_ARRAY, UTF-8, YAML
+gui.follow_show: ASCII
+
+# Follow stream delta times.
+# One of: NONE, TURN, ALL
+gui.follow_delta: NONE
+
+# Show packet bytes decode as.
+# One of: NONE, BASE64, COMPRESSED, HEX_DIGITS, PERCENT_ENCODING, QUOTED_PRINTABLE, ROT13
+gui.show_bytes_decode: NONE
+
+# Show packet bytes show as.
+# One of: ASCII, ASCII_CONTROL, C_ARRAYS, EBCDIC, HEX_DUMP, HTML, IMAGE, JSON, RAW, RUST_ARRAY, UTF-8, YAML
+gui.show_bytes_show: ASCII
+
+# Main window upper (or leftmost) pane size.
+# Decimal number.
+gui.geometry_main_upper_pane: 327
+
+# Main window middle pane size.
+# Decimal number.
+gui.geometry_main_lower_pane: 751
+
+# Main window master splitter state.
+# Hex byte string.
+gui.geometry_main_master_split: 000000ff0000000100000002000001530000016100ffffffff010000000200
+
+# Main window extra splitter state.
+# Hex byte string.
+gui.geometry_main_extra_split: 000000ff0000000100000002000003870000027400ffffffff010000000100
+
+# Splitter state of IOGraphDialog window.
+# Qt Splitter state (hex byte string).
+gui.geom.IOGraphDialog.splitter: 000000ff000000010000000200001ab8000003c001ffffffff010000000200
+
+# Splitter state of PreferencesDialog window.
+# Qt Splitter state (hex byte string).
+gui.geom.PreferencesDialog.splitter: 000000ff000000010000000200000082000003ad01ffffffff010000000100
+
+# Splitter state of RtpPlayerDialog window.
+# Qt Splitter state (hex byte string).
+gui.geom.RtpPlayerDialog.splitter: 000000ff0000000100000002000001e9000000a401ffffffff010000000200
+
+# Packet list column pixel widths.
+# Each pair of strings consists of a column format and its pixel width.
+column.width:
+        %m, 84,
+        %t, -1,
+        %s, 150,
+        %d, 150,
+        %p, 57,
+        %L, 65,
+        "%Cus:mgcp.req.verb", 59:C,
+        "%Cus:mgcp.transid", 119,
+        "%Cus:mgcp.rspframe", 65:C,
+        %i, 551
+
+# Open conversation dialog tabs.
+# List of conversation names, e.g. "TCP", "IPv6".
+gui.conversation_tabs: 
+
+# Conversation dialog tabs columns.
+# List of conversation columns numbers.
+gui.conversation_tabs_columns: 
+
+# Open endpoint dialog tabs.
+# List of endpoint names, e.g. "TCP", "IPv6".
+gui.endpoint_tabs: 
+
+# Endpoint dialog tabs columns.
+# List of endpoint columns numbers.
+gui.endpoint_tabs_columns: 
+
+# For RLC stats, whether to use RLC PDUs found inside MAC frames.
+# true or false (case-insensitive).
+gui.rlc_pdus_from_mac_frames: false
+
+# Additional Toolbars shown
+# List of additional toolbars to show.
+gui.additional_toolbar_show: 
+
+# Interface Toolbars show.
+# List of interface toolbars to show.
+gui.interface_toolbar_show: 

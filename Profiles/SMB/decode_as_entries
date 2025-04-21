@@ -1,0 +1,6 @@
+# "Decode As" entries file for Wireshark 2.4.0rc1.
+#
+# This file is regenerated each time "Decode As" preferences
+# are saved within Wireshark. Making manual changes should be safe,
+# however.
+decode_as_entry: tcp.port,9999,(none),HTTP
