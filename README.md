@@ -28,7 +28,7 @@ We try to state below what changes we have made, additions to, etc. the profiles
 ## How To Use Our Repository Profiles
 It is now super easy to add our profiles to your Wireshark system.
 
-1. Simply download the profile you want (they are all zipped).
+1. Simply download the profile you want (they are all zipped). Just click on the latest release by Releases on the right of your screen.  You will find all the ZIP files there.
 2. Then from your Wireshark GUI, right click on the lower right corner of the Wireshark GUI - in the Profile box.
 3. Then simply select: Import> from zip file, and pick the file from your downloads directory.  Now you can select the newly imported profile!!
 
