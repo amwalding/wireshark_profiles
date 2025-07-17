@@ -1,4 +1,6 @@
-![Visitor Count](https://profile-counter.glitch.me/amwalding1/count.svg)
+# Note:
+I have returned to simply listing the ZIP files here.  I know many of you wanted the more normal Release that so many coding people are used to here on GitHub but SO MANY of my users of Wireshark are not coders and struggle with this.  I am trying to make this easy and please everyone.  I have left the Release there if you want the "all in one" download.  That said, it will not be updated with the latest versions of the profiles going forward.
+
 # Wireshark Profiles Repository
 Welcome to all my Fellow Packet Analysts/Sniffers, Network Troubleshooters, and Wireshark geeks!
 
@@ -28,7 +30,7 @@ We try to state below what changes we have made, additions to, etc. the profiles
 ## How To Use Our Repository Profiles
 It is now super easy to add our profiles to your Wireshark system.
 
-1. Simply download the profile you want (they are all zipped). Just click on the latest release by Releases on the right of your screen.  You will find all the ZIP files there.
+1. Simply download the profile you want (they are all zipped). 
 2. Then from your Wireshark GUI, right click on the lower right corner of the Wireshark GUI - in the Profile box.
 3. Then simply select: Import> from zip file, and pick the file from your downloads directory.  Now you can select the newly imported profile!!
 
