@@ -1,4 +1,0 @@
-# "WLAN-detail" profile settings file for Wireshark 4.4.0. Edit with care.
-
-# Automatically switch to this profile if this display filter matches.
-auto_switch_filter: frame.protocols == "radiotap:wlan_radio:wlan"
